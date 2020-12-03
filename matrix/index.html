@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+
+            display: inline-block;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- <div>
+        <p> matrix 1 :</p>
+        <div id="mat1"></div>
+    </div>
+    <div>
+
+        <div>
+            <p> matrix 2 :</p>
+            <div id="mat2"></div>
+        </div>
+
+        <div>
+            <p> result:</p>
+            <div id="result"></div> 
+        </div> -->
+
+    <script>
+
+        // let mat1 = [
+        //     [0, 0],
+        //     [0, 0]
+        // ];
+
+        // let mat2 = [
+        //     [0, 0],
+        //     [0, 0]
+
+        // ];
+
+        // let result = [[0, 0], [0, 0]]
+
+
+        // for (let i = 0; i < mat1.length; i++) {
+
+        //     for (let j = 0; j < mat1[i].length; j++) {
+
+        //         console.log("i =", i, "and j=", j);
+        // mat1[i][j] = +prompt("getting matrix one data, Enter " + i + "," + j + ":");
+
+        //     }
+        // }
+        // for (let i = 0; i < mat2.length; i++) {
+
+        //     for (let j = 0; j < mat2[i].length; j++) {
+
+        //         console.log("i =", i, "and j=", j);
+        //         mat2[i][j] = +prompt("getting matrix obe data, Enter " + i + "," + j + ":");
+
+
+
+        //     }
+
+        // }
+
+        // for (let i = 0; i < result.length; i++) {
+        //     for (let j = 0; j < result[i].length; j++) {
+
+        //         console.log("i =", i, "and j=", j);
+        //         result[i][j] = mat1[i][j] + mat2[i][j];
+
+        //     }
+
+
+        // }
+        // console.log("sum of mat1 and mat2", result)
+
+        // document.getElementById("mat1").innerHTML = mat1[0] + "<br />" + mat1[1];
+        // document.getElementById("mat2").innerHTML = mat2[0] + "<br />" + mat2[1];
+        // document.getElementById("result").innerHTML = result[0] + "<br />" + result[1];
+
+
+
+
+
+        let mat1 = [
+
+            [0, 0],
+            [0, 0]
+
+        ]
+
+        let mat2 = [
+
+            [0, 0],
+            [0, 0]
+
+        ]
+        let result = [
+
+            [0, 0],
+            [0, 0]
+
+        ]
+
+
+
+        for (let i = 0; i < mat1.length; i++) {
+
+            for (let j = 0; j < mat1[i].length; j++) {
+
+                console.log(i, j)
+
+                mat1[i][j] = +prompt("enter Value" + i + " , " + j)
+
+            }
+        }
+
+        for (let i = 0; i < mat2.length; i++) {
+
+            for (let j = 0; j < mat2[i].length; j++) {
+
+
+                console.log(i, j)
+                mat2[i][j] = +prompt("enter the value" + i + " ," + j)
+
+            }
+
+        }
+
+        for ( let i =0; i <result.length; i++){
+
+            for (let j=0; j < result[i].length; j++){
+                
+
+                console.log( i, j)
+
+                result [i][j] = mat1[i][j] + mat2[i][j]
+
+            }
+        }
+
+        console.log(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
